@@ -21,7 +21,7 @@ def main():
 
     @client.event
     async def on_ready():
-        print('<NHR> Gemcutter Bot is online.')
+        print('Bot is online.')
 
     @client.event
     async def on_message(message):
