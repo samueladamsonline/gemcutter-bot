@@ -58,8 +58,7 @@ def search_spreadsheet(gem_name):
         'Orange': [],
         'Green': [],
         'Purple': [],
-        'Meta': [],
-        'Dragon\'s Eye': []
+        'Meta': []
     }
 
     for type in results_by_type.keys():
