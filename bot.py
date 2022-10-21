@@ -29,9 +29,13 @@ def main():
             message_as_list = message.content.split(' ' , 1)
 
             if len(message_as_list) > 1:
-                gem_name = message_as_list[1]
-                result = search_spreadsheet(gem_name)
-                await message.reply(result)
+
+                if message_as_list[1].startswith('help'):
+                    await message.reply('How to use: !gemcutter Some Gem Name')
+                else:
+                    gem_name = message_as_list[1]
+                    result = search_spreadsheet(gem_name)
+                    await message.reply(result)
             else:
                 await message.reply(
                     'Invalid command: missing gem name\nExample usage: !gemcutter Bright Scarlet Ruby')
