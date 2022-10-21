@@ -86,4 +86,5 @@ def search_spreadsheet(gem_name):
 
 
 if __name__ == '__main__':
+    print('Attempting to start bot...')
     main()
